@@ -45,6 +45,16 @@ uv init
 uv add ollama
 ```
 
+### Also...
+
+Run the following command:
+
+```bash
+unset LD_PRELOAD
+```
+
+And don't ask me why 😅
+
 ### Configure Server Connection
 
 The Ollama Python library can connect to remote servers by setting the host URL.
@@ -80,7 +90,7 @@ uv run test_connection.py
 ```
 
 **Expected output:**
-```
+```markdown
 ✓ Connected successfully!
 
 Available models:
@@ -204,7 +214,7 @@ Test your helper function:
 uv run ollama_client.py
 ```
 
-**✓ Checkpoint:** You should see "Hello, World!" and then a count to 5.
+**Checkpoint:** You should see "Hello, World!" and then a count to 5.
 
 ---
 
@@ -297,13 +307,10 @@ Create a new directory `cs450`
 
 Create a file `lab1_results.md` in `cs450` and add:
 
-```
-
+```markdown
 # Names: Your name and your lab partner's name
 # Lab: Lab1 (Prompt Engineering Basics)
 # Date: Today's date
-
-
 ```
 
 Now, answer:
@@ -316,6 +323,8 @@ Now, answer:
 5. What do you think the difference is between low top-p and high top-p?
 
 
-Create a new public Github Repository called `cs450`, upload your local `cs450` there.
+Create a new public Github Repository called `cs450`, upload your local `cs450` folder there.
 
 Email the GitHub repository web link to me at `chike.abuah@wallawalla.edu`
+
+Congrats, you're done with the first lab! 💪💪💪
