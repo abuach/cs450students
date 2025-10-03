@@ -341,13 +341,13 @@ response = call_ollama(
 print(f"Response: {response}\n")
 ```
 
-**Run this program a few times and save the results to a file `bad_story.md`**
+**Run this program a few times and observe the results**
 
 *then change `temperature=0.9,top_p=40,top_k=0.99`*,
 
-**Run this new version of the program a few times and save the results to a file `good_story.md`**
+**Run this new version of the program a few times and observe the results**
 
-*save both files to your `lab1` directory.
+### 3.2 Lab questions
 
 Create a file `lab1_results.md` in `lab1` and add:
 
@@ -359,15 +359,25 @@ Create a file `lab1_results.md` in `lab1` and add:
 
 Now, answer **(without using GenAI)**:
 
+Think about the following stages of the software development lifecycle:
+
+1) Requirements and Ideation 
+2) Design and Architecture
+3) Implementation 
+4) Testing & QA 
+5) Deployment & Maintenance
+
 **Questions to answer:**
-1. Which values for the prompt API parameters produced the most consistent results?
-2. Which produced the most creative/varied results?
-3. When would you use temp=0.0 vs temp=1.5? Describe a few specific situations.
+For **each** of these stages would you pick either: 
+    a) creative LLM parameter settings or 
+    b) consistent parameter settings 
+and why? 
 
-*There's no right or wrong answers here, I just want to see some thought go into the response.*
+*There's no right or wrong answers here, I just want to see some thought go into the response. 
+Base your response on your experience in this lab, and feel free to ask me any questions.*
 
 
-### 3.2 Save your work and submit
+### 3.3 Save your work and submit
 
 Create a new **public** Github Repository called `cs450`, upload your local `cs450` folder there.
 
@@ -378,3 +388,17 @@ Email the GitHub repository web link to me at `chike.abuah@wallawalla.edu`
 You can make a **private** Github Repo and add me as a collaborator, my username is `abuach`.
 
 Congrats, you're done with the first lab! 🎉
+
+Let me know when you're done.
+
+
+# Optional 
+
+Increase the model's token limit and creativity and try to generate code for one of the following Python programs:
+
+- Guess the Number Game (computer)
+- Rock, paper, scissors
+- Hangman
+- Passphrase Generator 
+
+Generate a few different versions. Are there any major differences from version to version?
