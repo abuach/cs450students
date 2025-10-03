@@ -333,8 +333,8 @@ prompt = "Tell me a cool story"
 response = call_ollama(
     prompt, 
     temperature=0.1, 
-    top_p=20,
-    top_k=0.9,
+    top_p=0.9,
+    top_k=20,
     num_predict=40
 )
 
@@ -343,9 +343,11 @@ print(f"Response: {response}\n")
 
 **Run this program a few times and observe the results**
 
-*then change `temperature=0.9,top_p=40,top_k=0.99`*,
+*then change `temperature=0.9,top_p=0.99,top_k=40`*,
 
 **Run this new version of the program a few times and observe the results**
+
+Try adjusting the parameters and experimenting
 
 ### 3.2 Lab questions
 
