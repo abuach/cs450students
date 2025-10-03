@@ -1,6 +1,8 @@
-# Lab 1: Getting Started with Ollama & Prompt Engineering
+# CS450
+# Instructor: Chiké Abuah
+# Lab 1: Getting Started with Ollama & Prompt Engineering Basics
   
-**Lab Duration:** 45 minutes  
+**Lab Duration:** ~45 minutes  
 
 ---
 
@@ -9,7 +11,7 @@
 By the end of this lab, you will be able to:
 - Connect to the Ollama API using the Python client library
 - Send basic requests to a language model
-- Understand model parameters (temperature, top-k, top-p)
+- Begin to understand model parameters (temperature, top-k, top-p)
 
 ---
 
@@ -17,13 +19,14 @@ By the end of this lab, you will be able to:
 
 - Python 
 - Network Access to the course Ollama server (Via CS Lab)
+- No prior context is required for this lab, although reading Lee Boonstra's *Prompt Engineering* would help with comprehension.
 
 ---
 
 
 ## Resources
 
-- Reading on prompt engineering
+- UV docs: https://docs.astral.sh/uv/
 - Ollama Python library docs: https://github.com/ollama/ollama-python
 - Ollama API documentation: https://github.com/ollama/ollama/blob/main/docs/api.md
 
@@ -38,14 +41,19 @@ By the end of this lab, you will be able to:
 
 ### Install Required Libraries
 
-I highly recommend `uv`
+I highly recommend `uv`. It (according to their docs): 
 
-```bash
-uv init
-uv add ollama
+```markdown
+🚀 Is a single tool to replace pip, pip-tools, pipx, poetry, pyenv, twine, virtualenv, and more.
+⚡️ Is 10-100x faster than pip.
+🗂️ Provides comprehensive project management, with a universal lockfile.
+❇️ Runs scripts, with support for inline dependency metadata.
+🐍 Installs and manages Python versions.
 ```
 
-### Also...
+# Create your workspace and virtual environment
+
+Open your Terminal.
 
 Run the following command:
 
@@ -53,7 +61,16 @@ Run the following command:
 unset LD_PRELOAD
 ```
 
-And don't ask me why 😅
+And don't ask me why! 😅
+
+**Then**
+
+```bash
+mkdir -p cs450/lab1
+cd cs450/lab1
+uv init
+uv add ollama
+```
 
 ### Configure Server Connection
 
@@ -71,7 +88,7 @@ def test_connection():
     try:
         # List available models
         models = client.list()
-        print("✓ Connected successfully!")
+        print("🎉 Connected successfully!")
         print("\nAvailable models:")
         for model in models['models']:
             print(f"  - {model['model']}")
@@ -91,7 +108,7 @@ uv run test_connection.py
 
 **Expected output:**
 ```markdown
-✓ Connected successfully!
+🎉 Connected successfully!
 
 Available models:
   - t1c/deepseek-math-7b-rl:latest
@@ -108,7 +125,7 @@ Available models:
 
 ---
 
-## Part 1: Basic API Usage (15 minutes)
+## Part 1: Basic API Usage (10 minutes)
 
 ### 1.1 Create a Helper Module
 
@@ -218,7 +235,7 @@ uv run ollama_client.py
 
 ---
 
-## Part 2: Understanding Model Parameters (20 minutes)
+## Part 2: Understanding Model Parameters (15 minutes)
 
 ### 2.1 Temperature Experiments
 
@@ -301,11 +318,38 @@ print(f"{response}\n")
 
 ---
 
-## Document Your Findings (10 minutes)
+## Part 3: Putting it all Together (10 minutes)
 
-Create a new directory `cs450`
+### 3.1 Final Experiments 
 
-Create a file `lab1_results.md` in `cs450` and add:
+
+Create `story.py`:
+
+```python
+from ollama_client import call_ollama
+
+prompt = "Tell me a cool story"
+
+response = call_ollama(
+    prompt, 
+    temperature=0.1, 
+    top_p=20,
+    top_k=0.9,
+    num_predict=40
+)
+
+print(f"Response: {response}\n")
+```
+
+**Run this program a few times and save the results to a file `bad_story.md`**
+
+*then change `temperature=0.9,top_p=40,top_k=0.99`*,
+
+**Run this new version of the program a few times and save the results to a file `good_story.md`**
+
+*save both files to your `lab1` directory.
+
+Create a file `lab1_results.md` in `lab1` and add:
 
 ```markdown
 # Names: Your name and your lab partner's name
@@ -313,18 +357,24 @@ Create a file `lab1_results.md` in `cs450` and add:
 # Date: Today's date
 ```
 
-Now, answer:
+Now, answer **(without using GenAI)**:
 
 **Questions to answer:**
-1. Which temperature gives the most consistent results?
-2. Which gives the most creative/varied results?
-3. When would you use temp=0.0 vs temp=1.5?
-4. What do you think the difference is between low top-k and high top-k?
-5. What do you think the difference is between low top-p and high top-p?
+1. Which values for the prompt API parameters produced the most consistent results?
+2. Which produced the most creative/varied results?
+3. When would you use temp=0.0 vs temp=1.5? Describe a few specific situations.
+
+*There's no right or wrong answers here, I just want to see some thought go into the response.*
 
 
-Create a new public Github Repository called `cs450`, upload your local `cs450` folder there.
+### 3.2 Save your work and submit
+
+Create a new **public** Github Repository called `cs450`, upload your local `cs450` folder there.
 
 Email the GitHub repository web link to me at `chike.abuah@wallawalla.edu`
 
-Congrats, you're done with the first lab! 💪💪💪
+*If you're concerned about privacy* 
+
+You can make a **private** Github Repo and add me as a collaborator, my username is `abuach`.
+
+Congrats, you're done with the first lab! 🎉
