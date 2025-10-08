@@ -41,8 +41,16 @@ cd cs450
 uv init 
 uv add ollama 
 mkdir util 
+```
+
+If you "drove" for Lab 1 you can run:
+
+```bash
 cp lab1/ollama_client.py util/
 ```
+
+Otherwise manually copy the client from the `lab1` specification.
+
 
 Create a file `__init__.py` in `cs450/util` and add:
 
