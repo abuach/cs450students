@@ -2,7 +2,7 @@
 
 Welcome!
 
-Software Engineering is fun! 😅
+Software Engineering is fun! 😄
 
 Slides, Labs and Schedules live here.
 
