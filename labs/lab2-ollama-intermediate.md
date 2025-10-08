@@ -219,12 +219,15 @@ for email in emails:
     print(f"Classification: {classification}")
 ```
 
-**Task 3.1:** Run and evaluate.
+**Task 3.11:** Run and evaluate.
 
 **Reflections:**
 1. How does this compare to zero-shot?
 2. Do the guiding examples seem helpful?
 3. What do you think would happen with different examples?
+
+**Task 3.12:** Try changing some of the classification labels to be intentionally wrong.
+    Rerun and evaluate. Does anything change?
 
 ---
 
@@ -283,9 +286,9 @@ for desc in descriptions:
     print(f"Generated Code:\n{code}\n")
 ```
 
-**Task 3.2:** Run a couple times and look at the output.
+**Task 3.21:** Run a couple times and look at the output.
 
-**Task 3.3:** Now try removing the code examples from the prompt, turning it to zero-shot. 
+**Task 3.22:** Now try removing the code examples from the prompt, turning it to zero-shot. 
    Rerun the code. Do you notice any difference in the generated code?
 
 ---
@@ -440,7 +443,8 @@ Now, answer **(without using GenAI)**:
 **1. Zero-Shot and Few-Shot:**
 - When would you choose zero-shot?
 - When is few-shot worth the extra effort?
-- How did the generated code change from `Task 3.2` to `Task 3.3`?
+- How did the classification output change from `Task 3.11` `Task 3.12`
+- How did the generated code change from `Task 3.21` to `Task 3.22`?
 
 ---
 
