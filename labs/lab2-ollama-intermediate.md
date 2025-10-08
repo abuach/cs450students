@@ -113,10 +113,8 @@ for review in reviews:
 
 **Task 2.1:** Run this and evaluate accuracy.
 
-**Questions:**
+**Reflections:**
 1. Did it classify all reviews correctly?
-2. What about the "okay" review?
-3. How could you improve the prompt?
 
 ---
 
@@ -225,7 +223,7 @@ for email in emails:
 
 **Reflections:**
 1. How does this compare to zero-shot?
-2. Do the examples seem helpful?
+2. Do the guiding examples seem helpful?
 3. What do you think would happen with different examples?
 
 ---
@@ -287,9 +285,8 @@ for desc in descriptions:
 
 **Task 3.2:** Run a couple times and look at the output.
 
-**Reflections:**
-1. Now try removing the code examples from the prompt. 
-   Rerun the code. Do you notice any difference in the output?
+**Task 3.3:** Now try removing the code examples from the prompt, turning it to zero-shot. 
+   Rerun the code. Do you notice any difference in the generated code?
 
 ---
 
@@ -443,9 +440,7 @@ Now, answer **(without using GenAI)**:
 **1. Zero-Shot and Few-Shot:**
 - When would you choose zero-shot?
 - When is few-shot worth the extra effort?
-
-**2. Prompt Engineering:**
-- What did you learned about writing prompts?
+- How did the generated code change from `Task 3.2` to `Task 3.3`?
 
 ---
 
@@ -458,9 +453,21 @@ Stage and commit the following files to Git:
    - `question.py` (Question Answering system)
    - `chat.py` (Interactive Conversation)
 
-Push to your remote Github `cs450` repo.
+Push all the code and md files to your remote Github `cs450` repo if you already have one.
 
-You're done with the second lab! 💪
+OR if you don't:
+
+Create a new **public** Github Repository called `cs450`, upload your local `cs450` folder there.
+
+*If you're concerned about privacy* 
+
+You can make a **private** Github Repo and add me as a collaborator, my username is `abuach`.
+
+Either way, email the GitHub repository web link to me at `chike.abuah@wallawalla.edu`
+
+Email subject should be `CS450 LAB 2`
+
+Great, you're done with the second lab! 💪
 
 Let me know when you're done.
 
