@@ -70,6 +70,8 @@ print(f"Initializing UTIL version {package_version}")
 mkdir lab2
 cd lab2
 ```
+
+Remember to use `uv run [program].py` to run your code.
 ---
 
 
