@@ -138,7 +138,7 @@ def answer_as_role(question, role, expertise):
         {'role': 'user', 'content': question}
     ]
     
-    return chat_ollama(messages, temperature=2.0)
+    return chat_ollama(messages, "gemma3", temperature=1.0)
 
 question = "In one paragraph, how can I use software engineering to become very respected and/or wealthy?"
 
