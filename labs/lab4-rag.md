@@ -1,4 +1,4 @@
-# Lab 3: Retrieval Augmented Generation (RAG)
+# Lab 4: Retrieval Augmented Generation (RAG)
 
 **Lab Duration:** 50 minutes  
 
