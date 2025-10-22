@@ -10,8 +10,6 @@
 
 ### Time Spent
 - **Total:** [X hours Y minutes]
-- **Started:** [Time]
-- **Ended:** [Time]
 
 ### Tasks Attempted
 1. [Task description]
