@@ -65,7 +65,7 @@ def get_embedding(text):
     """Get embedding vector for text."""
     client = ollama.Client(host='http://ollama.cs.wallawalla.edu:11434')
     response = client.embeddings(
-        model='cs450',
+        model='nomic-embed-text',
         prompt=text
     )
     return response['embedding']
@@ -109,7 +109,7 @@ def get_embedding(text):
     """Get embedding vector for text."""
     client = ollama.Client(host='http://ollama.cs.wallawalla.edu:11434')
     response = client.embeddings(
-        model='cs450',
+        model='nomic-embed-text',
         prompt=text
     )
     return response['embedding']
@@ -172,7 +172,7 @@ class SimpleKnowledgeBase:
         """Add a document to the knowledge base."""
         # Get embedding
         response = self.client.embeddings(
-            model='cs450',
+            model='nomic-embed-text',
             prompt=text
         )
         embedding = response['embedding']
@@ -186,7 +186,7 @@ class SimpleKnowledgeBase:
         """Search for most relevant documents."""
         # Get query embedding
         response = self.client.embeddings(
-            model='cs450',
+            model='nomic-embed-text',
             prompt=query
         )
         query_embedding = response['embedding']
