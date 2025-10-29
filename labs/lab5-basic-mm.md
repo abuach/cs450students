@@ -36,6 +36,7 @@ Run the following commands:
 
 ```bash
 cd cs450
+uv add requests
 mkdir lab5
 cd lab5
 ```
