@@ -78,6 +78,7 @@ def analyze_image(image_url, prompt, model="gemma3", temperature=0.3):
 ```
 
 **Note:** We'll use publicly available test images from the internet for this lab.
+**Note:** Add `analyze_image` to `__init__.py` in the first and second lines.
 
 ---
 
