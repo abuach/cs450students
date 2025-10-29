@@ -409,7 +409,7 @@ Create a file `lab5_results.md` in `lab5` and add:
 
 ```markdown
 # Names: Your name and your lab partner's name
-# Lab: Lab5 (Multimodal AI with Ollama)
+# Lab: Lab5 (Basic Multimodal AI with Ollama)
 # Date: Today's date
 ```
 
