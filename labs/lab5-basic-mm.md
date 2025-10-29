@@ -98,8 +98,8 @@ def describe_image(image_url, detail_level="basic"):
 
 # Test with classic freely licensed images
 test_images = [
-    "https://pixabay.com/photos/tree-sunset-clouds-sky-silhouette-736885/",
-    "https://pixabay.com/photos/tree-sunset-clouds-sky-silhouette-736885/"
+    "https://upload.wikimedia.org/wikipedia/commons/3/37/Oryctolagus_cuniculus_Tasmania_2.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/5/5f/Red_Kangaroos_at_Sturt_National_Park_NSW.jpg"
 ]
 
 if __name__ == "__main__":
