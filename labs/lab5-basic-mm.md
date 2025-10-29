@@ -126,7 +126,7 @@ if __name__ == "__main__":
         
         # Detailed description
         detailed = describe_image(img_url, "detailed")
-        print(f"Detailed: {detailed[:100]}...")
+        print(f"Detailed: {detailed}...")
 ```
 
 **Task 2.1:** Run this script and observe the different description levels.
