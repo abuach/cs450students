@@ -412,27 +412,6 @@ Create a file `lab5_results.md` in `lab5` and add:
 # Date: Today's date
 ```
 
-Now, answer **(without using GenAI)**:
-
-**1. Image Understanding:**
-- How accurate were the image descriptions?
-- What types of details did the model capture well?
-- What did it miss or misinterpret?
-
-**2. Classification Performance:**
-- How did zero-shot classification perform?
-- Did adding guidelines (few-shot style) improve results?
-- What categories were easiest/hardest to classify?
-
-**3. Practical Applications:**
-- What real-world applications could benefit from this?
-- What limitations did you encounter?
-- How might you improve accuracy?
-
-**4. Comparison:**
-- How does multimodal AI differ from text-only?
-- What new capabilities does vision enable?
-
 ---
 
 ## Submission
