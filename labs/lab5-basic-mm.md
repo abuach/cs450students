@@ -43,22 +43,33 @@ cd lab5
 Add the following function to your ollama client:
 
 ```python
-def analyze_image(image_path, prompt, model="gemma3", temperature=0.3):
+def analyze_image(image_url, prompt, model="gemma3", temperature=0.3):
     """
-    Analyze an image with a text prompt.
+    Analyze an image from a URL with a text prompt.
     
     Args:
-        image_path: Path to image file
+        image_url: URL of the image
         prompt: Question or instruction about the image
         model: Vision model to use
         temperature: Randomness (0.0-1.0)
     """
-    response = ollama.chat(
+
+    # Add User-Agent header to avoid 403 errors
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+    }
+
+    # Download image from URL
+    response = requests.get(image_url, headers=headers)
+    response.raise_for_status()
+    
+    # Pass image bytes directly
+    response = client.chat(
         model=model,
         messages=[{
             'role': 'user',
             'content': prompt,
-            'images': [image_path]
+            'images': [response.content]  # Pass bytes directly
         }],
         options={'temperature': temperature}
     )
