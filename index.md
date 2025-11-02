@@ -2,25 +2,23 @@
 
 Welcome!
 
-Software Engineering is fun! 😄
-
 Slides, Labs and Schedules live here.
 
 ## Labs 
 
-Labs are avilable here: https://github.com/abuach/cs450students/tree/main/labs
+Labs [are avilable here](https://github.com/abuach/cs450students/tree/main/labs)
 
 ## Slides 
 
-Slides are available here: https://github.com/abuach/cs450students/tree/main/slides
+Slides [are available here](https://github.com/abuach/cs450students/tree/main/slides)
 
 ## Project Info 
 
-Project Info can be found here: https://github.com/abuach/cs450students/tree/main/project
+Project Info [can be found here](https://github.com/abuach/cs450students/tree/main/project)
 
 ## Textbook & Other References
 
-The primary textbook we will use for this course is: https://abuach.github.io/programming-genai/
+The primary textbook we will use for this course [is available online here](https://abuach.github.io/programming-genai/)
 
 Other resources will be assigned for additional reading in D2L.
 
