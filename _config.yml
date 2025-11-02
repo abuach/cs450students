@@ -1,0 +1,17 @@
+title: CS450 - Software Engineering
+description: Course website for CS450 Software Engineering
+theme: jekyll-theme-cayman
+baseurl: "/cs450students"
+url: "https://abuach.github.io"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: true
