@@ -1,4 +1,8 @@
-# Modern Software Engineering with GenAI – Fall 2025
+# Modern Software Engineering with GenAI
+
+**Fall 2025**
+
+Instructor: [Chiké Abuah](https://chikeabuah.github.io/)
 
 Welcome!
 
@@ -6,7 +10,7 @@ Slides, Labs and Schedules live here.
 
 ## Labs 
 
-Labs [are avilable here](https://github.com/abuach/cs450students/tree/main/labs)
+Labs [are available here](https://github.com/abuach/cs450students/tree/main/labs)
 
 ## Slides 
 
@@ -21,6 +25,10 @@ Project Info [can be found here](https://github.com/abuach/cs450students/tree/ma
 The primary textbook we will use for this course [is available online here](https://abuach.github.io/programming-genai/)
 
 Other resources will be assigned for additional reading in D2L.
+
+## Course Description 
+
+The course description [can be found here](https://wallawalla.smartcatalogiq.com/en/current/undergraduate-bulletin/courses/cptr-computer-science/400/cptr-450)
 
 ## Schedule
 
