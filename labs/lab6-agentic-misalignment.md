@@ -119,7 +119,7 @@ You should see:
 Let's test one scenario:
 
 ```bash
-python scripts/run_experiments.py --config configs/example_experiment_config.yaml
+python3 scripts/run_experiments.py --prompts results/example_experiment/prompts/
 ```
 
 **What this does:**
