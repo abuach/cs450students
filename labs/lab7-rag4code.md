@@ -129,9 +129,6 @@ if __name__ == "__main__":
 
 **Task 2.1:** Run this to verify UniXcoder works correctly.
 
-**Reflections:**
-1. What is the dimension of UniXcoder embeddings?
-
 ---
 
 ### 2.2 Compare Generic vs Code-Specific Embeddings
@@ -262,14 +259,12 @@ print("  - Give HIGH similarity for functionally similar code")
 print("  - Give LOW similarity for functionally different code")
 print(f"\nUniXcoder discrimination (similar - different): {unix_sim - unix_diff:.4f}")
 print(f"Generic discrimination (similar - different):   {generic_sim - generic_diff:.4f}")
-print("\nHigher discrimination = better at distinguishing code semantics")
 ```
 
 **Task 2.2:** Run and observe the differences.
 
 **Reflections:**
-1. Which model better distinguishes similar vs different code?
-2. Look at the "discrimination" scores - what do they tell you?
+1. Look at the "discrimination" scores - what do they tell you?
 
 ---
 
@@ -342,12 +337,6 @@ print("\n" + "="*60)
 print("Observations:")
 print("="*60)
 print("Higher scores = more similar to original")
-print("UniXcoder should recognize:")
-print("  - Renamed variables as very similar")
-print("  - Type hints as very similar")
-print("  - Different function names as fairly similar")
-print("  - Different logic (multiply) as less similar")
-print("  - Completely different functions as least similar")
 ```
 
 **Task 2.3:** Run and analyze how UniXcoder handles variations.
@@ -497,7 +486,7 @@ for r in results:
 
 **Reflections:**
 1. Does UniXcoder recognize increasingly numerous changes?
-2. How does it handle the cosmetic change? Does it think it's important, if so, why?
+2. How does it handle the "cosmetic" change? Does it think it's important, and if so, why?
 
 ---
 
@@ -698,10 +687,6 @@ for query in queries:
 ```
 
 **Task 3.1:** Run and observe how Chroma works with UniXcoder.
-
-**Reflections:**
-1. How does Chroma make retrieval easier?
-2. Are the retrieved functions relevant to the queries?
 
 ---
 
@@ -1335,10 +1320,6 @@ if __name__ == "__main__":
 
 **Task 5.1:** Run and examine the RAG system capabilities.
 
-**Reflections:**
-1. Does the generated code follow the style of retrieved examples?
-2. How does retrieval quality affect generation quality?
-
 ---
 
 ### 5.2 Code Understanding with RAG
@@ -1419,7 +1400,7 @@ for test in test_cases:
 **Task 5.2:** Run and evaluate code understanding quality.
 
 **Reflections:**
-1. Does RAG provide helpful explanations?
+1. Does the RAG system provide helpful explanations?
 
 ---
 
