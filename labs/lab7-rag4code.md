@@ -342,8 +342,7 @@ print("Higher scores = more similar to original")
 **Task 2.3:** Run and analyze how UniXcoder handles variations.
 
 **Reflections:**
-1. Does UniXcoder recognize functionally similar code despite variable name changes?
-2. How does it handle type hints?
+1. Does UniXcoder recognize functionally similar code despite variable name changes and type hints?
 
 
 ---
