@@ -1,6 +1,6 @@
 # Lab 7: Retrieval Augmented Generation for Code
 
-**Lab Duration:** 70 minutes  
+**Lab Duration:** 80 minutes  
 
 ---
 
@@ -46,7 +46,7 @@ It's currently one of the best open-source models for code understanding tasks.
 ---
 
 
-## Part 1: Setup (5 minutes)
+## Part 1: Setup (10 minutes)
 
 Run the following commands: 
 
@@ -66,7 +66,7 @@ Remember to use `uv run [program].py` to run your code.
 
 ---
 
-## Part 2: Understanding Code Embeddings (20 minutes)
+## Part 2: Understanding Code Embeddings (25 minutes)
 
 ### 2.1 Load and Test UniXcoder
 
