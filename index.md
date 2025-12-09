@@ -38,15 +38,15 @@ The course description [can be found here](https://wallawalla.smartcatalogiq.com
 
 | Week | Date       | Topic                                         |
 |------|------------|-----------------------------------------------|
-| 1    | Mon Sep 29 | Course Introduction                           |
+| 1    | Mon Sep 29 | Course Introduction: What is SE?              |
 |      | Wed Oct 1  | Course Introduction pt. 2                     |
-|      | Fri Oct 3  | Prompt Engineering                            |
-| 2    | Mon Oct 6  | Prompt Engineering pt. 2                      |
-|      | Wed Oct 8  | Prompt Engineering pt. 3                      |
-|      | Fri Oct 10 | Prompt Engineering pt. 4                      |
-| 3    | Mon Oct 13 | Prompt Engineering pt. 5                      |
+|      | Fri Oct 3  | LLM Output Configuration                      |
+| 2    | Mon Oct 6  | LLM Output Configuration Lab                  |
+|      | Wed Oct 8  | Prompting Techniques                          |
+|      | Fri Oct 10 | Prompting Techniques Lab                      |
+| 3    | Mon Oct 13 | Advanced Prompting Techniques                 |
 |      | Wed Oct 15 | Service Day                                   |
-|      | Fri Oct 17 | Prompt Engineering pt. 6                      |
+|      | Fri Oct 17 | Advanced Prompting Techniques Lab             |
 | 4    | Mon Oct 20 | Project: Kickoff; Agile; Scrum                |
 |      | Wed Oct 22 | Retrieval-Augmented Generation                |
 |      | Fri Oct 24 | Project: Set Up                               |
