@@ -38,7 +38,7 @@ The course description [can be found here](https://wallawalla.smartcatalogiq.com
 
 | Week | Date       | Topic                                         |
 |------|------------|-----------------------------------------------|
-| 1    | Mon Sep 29 | Course Introduction: What is SE?              |
+| 1    | Mon Sep 29 | Course Introduction: Modern SE                |
 |      | Wed Oct 1  | Course Introduction pt. 2                     |
 |      | Fri Oct 3  | LLM Output Configuration                      |
 | 2    | Mon Oct 6  | LLM Output Configuration Lab                  |
