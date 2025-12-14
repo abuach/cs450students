@@ -1,41 +1,3 @@
-# Modern Software Engineering with GenAI
-
-**Fall 2025**
-
-Instructor: [Chiké Abuah](https://chikeabuah.github.io/)
-
-Welcome!
-
-Slides, Labs and Schedules live here.
-
-## Labs 
-
-Labs [are available here](https://github.com/abuach/cs450students/tree/main/labs)
-
-## Slides 
-
-Slides [are available here](https://github.com/abuach/cs450students/tree/main/slides)
-
-## Project Info 
-
-Project Info [can be found here](https://github.com/abuach/cs450students/tree/main/project)
-
-## Textbook & Other References
-
-The primary textbook we will use for this course [is available online here](https://abuach.github.io/programming-genai/)
-
-Other resources will be assigned for additional reading in D2L.
-
-## Course Description 
-
-The course description [can be found here](https://wallawalla.smartcatalogiq.com/en/current/undergraduate-bulletin/courses/cptr-computer-science/400/cptr-450)
-
-## Schedule
-
-**Class Meetings:** MWF  
-**Start Date:** Sept 29, 2025  
-
-
 | Week | Date       | Topic                                         |
 |------|------------|-----------------------------------------------|
 | 1    | Mon Sep 29 | Course Introduction: Modern SE                |
@@ -74,4 +36,3 @@ The course description [can be found here](https://wallawalla.smartcatalogiq.com
 | 12   | Mon Dec 15 | Finals Week                                   |
 |      | Wed Dec 17 | Finals Week                                   |
 |      | Fri Dec 19 | Project - Repositories                        |
-
